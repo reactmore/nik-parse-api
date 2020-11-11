@@ -1,20 +1,28 @@
 # USAGE
 
 ```
-//Console log
-var nik = require("./index");
+//use npm 
+npm i nik-parse-api
+```
 
-console.log(nik.nikParse(3271012707960007))
+```
+//test use Console log
+
+var nik = require("nik-parse-api");
+
+console.log(nik.nikParse(3204110609970001))
 ```
 ```
 //express js
 
+var nik = require("nik-parse-api");
+
 app.get('/api/nik/:nik', function (req, res) {
     const nik = req.params["nik"];
-    res.send(induk.nikParse(nik));
+    res.send(nik.nikParse(nik));
   });
   
-//ex : https://your-domain/api/nik/3271012079730007  
+//ex : https://your-domain/api/nik/3204110609970001  
 ```
 
 Result
@@ -42,4 +50,4 @@ Result
 ```
 
 <h3>- <a href="https://github.com/bachors/nik_parse.js
-">Original Repo</a></h3>
+">Original Repo by Bachors</a></h3>
