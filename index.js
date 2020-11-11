@@ -1,12 +1,20 @@
 #!/usr/bin/env node
 var fs = require('fs');
 
+function get_data() {
+    const file = require(`./data/data.json`);
+    if (!file) return console.log(`404`);
+
+    return file;
+}
+
+
 function nikParse(nik) {
 
     const dataPath = './data/data.json';
 
     // Data wilayah & kodepos
-    const U = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+    const U = get_data()
     // Output NIK tidak valid
     let res = {
         status: "error",

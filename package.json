@@ -12,9 +12,7 @@
   ],
   "author": "bachors (recode reactmore)",
   "license": "ISC",
-  "dependencies": {
-    "fs": "0.0.1-security"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "repository": {
     "type": "git",
