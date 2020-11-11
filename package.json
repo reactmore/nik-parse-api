@@ -18,6 +18,9 @@
     "type": "git",
     "url": "git+https://github.com/reactmore/nik-parse-api.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "bugs": {
     "url": "https://github.com/reactmore/nik-parse-api/issues"
   },
